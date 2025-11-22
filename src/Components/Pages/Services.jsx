@@ -2,6 +2,7 @@ import React from "react";
 import Pic1 from "../../assets/stepping.svg";
 import Pic2 from "../../assets/shecreate.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>
@@ -57,7 +58,7 @@ const Services = () => {
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>
@@ -74,7 +75,8 @@ const Services = () => {
               the successful execution of every construction endeavor.
             </p>
 
-            <img className="bg-gray-200 rounded-4xl mb-5 h-[45vh] w-full"
+            <img
+              className="bg-gray-200 rounded-4xl mb-5 h-[45vh] w-full"
               src={Pic1}
             />
             <Link
@@ -84,7 +86,7 @@ const Services = () => {
             >
               Read more{" "}
               <span>
-                <MdKeyboardArrowRight size={24} />
+                <FaArrowRight size={16} />
               </span>
             </Link>
           </div>
@@ -99,7 +101,8 @@ const Services = () => {
               effectiveness of our installation services.
             </p>
 
-            <img className="bg-gray-200 rounded-4xl mb-5 h-[45vh] w-full"
+            <img
+              className="bg-gray-200 rounded-4xl mb-5 h-[45vh] w-full"
               src={Pic1}
             />
             <Link
@@ -109,36 +112,36 @@ const Services = () => {
             >
               Read more{" "}
               <span>
-                <MdKeyboardArrowRight size={24} />
+                <FaArrowRight size={16} />
               </span>
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="bg-black py-16 lg:px-16 md:px-8">
+      <div className="bg-black py-16 px-8">
         <div className="text-center mb-10">
           <h1 className="text-6xl font-bold text-white mb-5">Marine</h1>
-          <p className="text-2xl font-bold text-white">
+          <p className="font-bold text-white" style={{ fontSize: "22px" }}>
             Our vessels are designed for versatility, capable of adapting to the
             unique demands of various marine operations,
             <br /> regardless of complexity.
           </p>
         </div>
         <div className="flex justify-between items-center mb-10">
-          <img className="h-[45vh]" src={Pic1} />
-          <img className="h-[45vh]" src={Pic1} />
-          <img className="h-[45vh]" src={Pic1} />
+          <img className="h-[45vh] object-contain" src="/banner2.jpeg" />
+          <img className="h-[45vh] object-contain" src="/banner2.jpeg" />
+          <img className="h-[45vh] object-contain" src="/banner2.jpeg" />
         </div>
         <div className="flex items-center justify-center">
           <Link
             to="/fleet"
-            className="text-xl text-blue-500 flex items-center m-0"
+            className="text-xl text-blue-300 flex items-center justify-center m-0"
             href="#"
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>
@@ -162,7 +165,7 @@ const Services = () => {
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>
@@ -191,7 +194,7 @@ const Services = () => {
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>
@@ -214,7 +217,7 @@ const Services = () => {
           >
             Read more{" "}
             <span>
-              <MdKeyboardArrowRight size={24} />
+              <FaArrowRight size={16} />
             </span>
           </Link>
         </div>

@@ -11,14 +11,18 @@ const Footer = () => {
   return (
     <div className='flex lg:flex-row justify-between sm:mx-5 md:mx-20 lg:mx-40 flex-col md:gap-2 p-4'>
       <div>
-        Copyrights © 2025 Ariosh Ltd. All Rights Reserved
+        Copyrights © 2025 Hayus Ltd. All Rights Reserved
       </div>
       <div className='flex gap-5'>
-        <a href='#'><FaFacebook size={20}/></a>
-        <a href='#'><FaXTwitter size={20}/></a>
-        <a href='#'><FaInstagram size={20}/></a>
-        <a href='#'><FaLinkedin size={20} /></a>
-        <a href='#'><IoLogoYoutube size={20} /></a>
+        <a href='https://www.facebook.com/share/17XT65ddPF/?mibextid=wwXlfr'
+        target="_blank" rel="noopener noreferrer"><FaFacebook size={20}/></a>
+        <a href='https://x.com/yusufolasile1?s=21' 
+        target="_blank" rel="noopener noreferrer"><FaXTwitter size={20}/></a>
+        <a href='#' target="_blank" rel="noopener noreferrer"><FaInstagram size={20}/></a>
+        <a href='https://www.linkedin.com/in/yusuf-olasile-446627247?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+        target="_blank" rel="noopener noreferrer"><FaLinkedin size={20}/></a>
+        <a href='https://youtube.com/@yusufyahaya4295?si=-b-O_sOOPyPWQ2pK'
+        target="_blank" rel="noopener noreferrer"><IoLogoYoutube size={20} /></a>
       </div>
       <div className='flex gap-1'>
         <a href='#'><MdEmail size={24} /></a>

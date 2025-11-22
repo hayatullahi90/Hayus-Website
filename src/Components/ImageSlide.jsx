@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 const ImageSlide = () => {
-  const slides = ["/banner1.jpeg", "/banner2.jpeg", "/banner1.jpeg", "/banner2.jpeg"];
+  const slides = ["/banner1.jpeg", "/pic2.jpg", "/banner1.jpeg", "/pic3.jpg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const ImageSlide = () => {
   };
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden shadow-lg">
+    <div className="relative w-full lg:h-[105vh] md:h-[60vh] overflow-hidden shadow-gray-900">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -36,16 +36,16 @@ const ImageSlide = () => {
 
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow z-30"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 hover:bg-white p-2 z-30"
       >
-        <ChevronLeft className="w-6 h-6 text-gray-800" />
+        <ChevronLeft className="hidden w-6 h-6 text-gray-800" />
       </button>
 
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow z-30"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 hover:bg-white p-2 z-30"
       >
-        <ChevronRight className="w-6 h-6 text-gray-800" />
+        <ChevronRight className="hidden w-6 h-6 text-gray-800" />
       </button>
 
       <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-30">
@@ -54,7 +54,7 @@ const ImageSlide = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-              currentIndex === index ? "bg-blue-600 scale-110" : "bg-gray-300"
+              currentIndex === index ? "" : ""
             }`}
           ></div>
         ))}

@@ -14,8 +14,8 @@ function Nav() {
     };
 
   return (
-    <div className='flex flex-row justify-between items-center sticky top-0 bg-gray-500 py-4 lg:px-40 md:px-20 sm:x-10 z-50'>
-    <Link className='text-xl' to='/'><em className='text-amber-800 text-3xl font-bold'>h</em>ayus</Link>
+    <div className='flex flex-row justify-between items-center sticky top-0 bg-white py-1 lg:px-30 md:px-20 sm:x-10 z-50'>
+    <Link className='font-bold' style={{fontSize:24}} to='/'><em className='text-blue-800/80 text-3xl font-bold'>h</em>ayus</Link>
     <ul className='hidden md:flex flex-row gap-8 text-bold'>
         <li onMouseLeave={() => setAbout(false)} onMouseEnter={() => setAbout(true)}>
             <Link className="hover:text-blue-800 font-bold" to='/about'>About</Link>   
@@ -39,7 +39,7 @@ function Nav() {
             <Link className='hover:text-blue-800 font-bold' to='/contact'>Contact Us</Link>
         </li>
     </ul>
-    <IoSearchOutline className='hover:text-blue-800 font-bold' size={24} />
+    <IoSearchOutline className='hover:text-blue-800 font-bold' size={16} />
 
     <div className='md:hidden' onClick={handleNav}>
         {Nav? <LuMenu size={24} />: <FaTimes size={24}/>}

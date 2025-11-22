@@ -31,9 +31,9 @@ function Subnav() {
   );
 
   return (
-    <div className="fixed top-16 left-0 w-full bg-gray-500 text-black font-semibold py-4 px-40 z-40">
+    <div className="fixed top-10 left-0 w-full bg-white border-b-2 text-black pb-4 font-semibold py-4 px-30 z-40">
       <div className="flex justify-between items-center w-full">
-        <div className="text-black font-bold">
+        <div className="text-black font-bold text-2xl">
           {activeLink ? (
             <Link to={activeLink.path}>{activeLink.name}</Link>
           ) : (

@@ -12,7 +12,7 @@ const ImageSlider = () => {
       link: "/projects",
     },
     {
-      url: "/banner1.jpeg",
+      url: "/pic2.jpg",
       title: "Procurement",
       subtitle: "On Time. On Budget.",
       link: "/procurement",
@@ -24,7 +24,7 @@ const ImageSlider = () => {
       link: "/operations",
     },
     {
-      url: "/banner1.jpeg",
+      url: "/pic3.jpg",
       title: "Laser Scanning",
       subtitle: "On Time. On Budget.",
       link: "/laser",
@@ -55,7 +55,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden shadow-lg">
+    <div className="relative w-full lg:h-[130vh] md:h-[70vh] sm:h-[50vh] overflow-hidden shadow-lg">
       {slides.map((slide, index) => (
         <Link
           key={index} to={slide.link}
@@ -86,16 +86,16 @@ const ImageSlider = () => {
 
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow z-30"
+        className="absolute top-1/2 left-1 transform -translate-y-1/2 p-1 z-30"
       >
-        <ChevronLeft className="w-6 h-6 text-gray-800" />
+        <ChevronLeft className="text-white font-extrabold" size={38} />
       </button>
 
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow z-30"
+        className="absolute top-1/2 right-1 transform -translate-y-1/2 p-1 z-30"
       >
-        <ChevronRight className="w-6 h-6 text-gray-800" />
+        <ChevronRight className="text-white font-extrabold" size={38} />
       </button>
 
       <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-30">
@@ -104,7 +104,7 @@ const ImageSlider = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-              currentIndex === index ? "bg-blue-600" : "bg-gray-300"
+              currentIndex === index ? "" : ""
             }`}
           ></div>
         ))}
